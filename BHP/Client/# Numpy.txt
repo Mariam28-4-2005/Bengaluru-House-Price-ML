@@ -1,0 +1,38 @@
+# Numpy
+
+import numpy as np
+
+# list vs array
+l = [1,2,3,4,5]
+arr = np.array([1,2,3,4,5])
+
+print(l+[1])
+print(arr+1)
+print(arr*2)
+print(arr+arr)
+print(l+l)
+print(type(arr))
+print(arr.dtype)
+print(arr.shape)
+print(arr.sum())
+print(arr.size)
+
+#index and slicing
+arr2= np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print(arr2[1])
+# print(arr2[2]) ERROR
+print( arr2[0:7] )
+print(arr2[-1::-1])
+print(arr2[:2 ,1:3])
+print(arr2[0, :])
+
+#linspace & arrange
+#linspace(start,end,size)
+print(np.linspace(5,10,3)) # end - start / size-1
+print(len(np.linspace(1,10)))
+print(len(np.linspace(100,10)))
+
+
+print(np.arange(10))
+print(np.arange(1,10,2))
+print(np.arange(10,1,-2))
